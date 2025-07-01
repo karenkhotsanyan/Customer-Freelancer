@@ -1,0 +1,110 @@
+/* Settings.module.scss */
+
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #222;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  div {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 6px;
+      font-weight: 500;
+      color: #444;
+    }
+
+    input,
+    select {
+      padding: 8px 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+
+      &:focus {
+        border-color: #0070f3;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 112, 243, 0.5);
+      }
+    }
+
+    .error {
+      color: #e63946;
+      font-size: 0.85rem;
+      margin-top: 4px;
+    }
+  }
+
+  button {
+    padding: 10px 15px;
+    background-color: #0070f3;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+
+    &:hover:not(:disabled) {
+      background-color: #005bb5;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.skill-list {
+  margin-top: 25px;
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      background-color: #e2e8f0;
+      border-radius: 6px;
+      padding: 8px 12px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      button {
+        background-color: #e63946;
+        border: none;
+        padding: 4px 8px;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        font-size: 0.85rem;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #b12c35;
+        }
+      }
+    }
+  }
+}

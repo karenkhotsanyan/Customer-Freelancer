@@ -1,11 +1,12 @@
-export default function VerifyPage() {
+import { Verify } from "../components/Verify";
+
+export default function VerifyPage({searchParams}:any) {
+
+// console.log(searchParams.email);
+// console.log(searchParams.emailToken);
   return (
     <>
-      <h1>Verify page</h1>
-      <p>
-        This page is intended to verify that Redux state is persisted across
-        page navigations.
-      </p>
+      <Verify email={searchParams.email} emailToken={searchParams.emailToken} />
     </>
   );
 }

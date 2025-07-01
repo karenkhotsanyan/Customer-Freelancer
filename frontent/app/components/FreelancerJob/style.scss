@@ -1,0 +1,37 @@
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card {
+  width: 18rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #222;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: #555;
+    }
+  }
+}

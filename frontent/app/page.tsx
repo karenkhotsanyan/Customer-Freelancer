@@ -1,10 +1,30 @@
 import type { Metadata } from "next";
-import { Counter } from "./components/counter/Counter";
+import { Dashboard } from "./components/Dashboard";
 
 export default function IndexPage() {
-  return <Counter />;
+  return <Dashboard />;
 }
 
 export const metadata: Metadata = {
-  title: "Redux Toolkit",
+  title: "Dashboard",
 };
+/**
+ * login 
+ * register
+ * verify
+ * profile
+ * settings
+ * jobs+
+ * add-job
+ * jobs/[id]+
+ * skills+
+ * skills/[id]+
+ * add-skill+
+ * costumers+
+ * costumers/[id]+
+ * freelancers+
+ * freelancers/[id]+
+ * users
+ * users/[id]
+ * 
+ */
